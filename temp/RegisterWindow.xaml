@@ -1,0 +1,24 @@
+﻿<Window x:Class="Projekt_DPOB.RegisterWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Projekt_DPOB"
+        mc:Ignorable="d"
+        Title="Register" Height="360" Width="400">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="90*"/>
+            <RowDefinition Height="90*"/>
+            <RowDefinition Height="90*"/>
+            <RowDefinition Height="90*"/>
+        </Grid.RowDefinitions>
+        <Button Name="registerButton" Content="Register" HorizontalAlignment="Left" Grid.Row="3" VerticalAlignment="Top" Width="392" Height="83" Click="registerButton_Click"/>
+        <TextBox Name="loginBox" MaxLength="64" HorizontalAlignment="Left" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Height="82" TextWrapping="NoWrap"  VerticalAlignment="Top" Width="392" FontSize="36" TextChanged="loginBox_TextChanged"/>
+        <TextBox Name="nickBox" MaxLength="64" HorizontalAlignment="Left" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Height="82" TextWrapping="NoWrap"  VerticalAlignment="Top" Width="392" FontSize="36"  Grid.Row="2" TextChanged="nickBox_TextChanged"/>
+        <PasswordBox Name="passwordBox" MaxLength="64" HorizontalAlignment="Left" VerticalContentAlignment="Center" FontSize="36" HorizontalContentAlignment="Center" Grid.Row="1" VerticalAlignment="Top" Width="392" Height="83" PasswordChanged="passwordBox_PasswordChanged"/>
+        <Label Name="loginLabel" Content="Your login here" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" HorizontalAlignment="Left" VerticalAlignment="Top" Width="392" Height="82" IsHitTestVisible="False"/>
+        <Label Name="passwordLabel" Content="Your password here" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" HorizontalAlignment="Left" VerticalAlignment="Top" Width="392" Height="82" IsHitTestVisible="False" Grid.Row="1"/>
+        <Label x:Name="nickLabel" Content="Your login here" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" HorizontalAlignment="Left" VerticalAlignment="Top" Width="392" Height="82" IsHitTestVisible="False" Grid.Row="2"/>
+    </Grid>
+</Window>

@@ -1,0 +1,28 @@
+﻿<Window x:Class="Projekt_DPOB.Chat"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Projekt_DPOB"
+        mc:Ignorable="d"
+        Title="Chat" Height="600" Width="800" Deactivated="Window_Deactivated" Activated="Window_Activated" Closing="Window_Closing">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="655*"/>
+            <ColumnDefinition Width="137*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40*"/>
+            <RowDefinition Height="481*"/>
+            <RowDefinition Height="60*"/>
+        </Grid.RowDefinitions>
+        <RichTextBox Name="richMessagesBox" HorizontalAlignment="Left" Height="471" Grid.Row="1" VerticalAlignment="Top" Width="655" IsHitTestVisible="True" AllowDrop="False" IsReadOnly="True"/>
+        <Button Name="optionsButton" Content="Opcje" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Top" Width="137" Height="39" Click="optionsButton_Click"/>
+        <Label Name="statusLabel" Content="Zalogowano jako :  na serwer " VerticalContentAlignment="Center" HorizontalAlignment="Left" VerticalAlignment="Top" Width="655" Height="39"/>
+        <Button Name="sendButton" Content="Wyślij" Grid.Column="1" HorizontalAlignment="Left" Grid.Row="2" VerticalAlignment="Top" Width="137" Height="59" Click="SendButton_Click" IsDefault="True"/>
+
+        <TextBox Name="messageBox" HorizontalAlignment="Left" Height="59" Grid.Row="2" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="655" TextChanged="MessageBox_TextChanged"/>
+        <Label Name="messageLabel" Content="[Wiadomość]" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Grid.Row="2" VerticalAlignment="Top" Height="59" Width="655" IsHitTestVisible="False"/>
+        <ListBox Name="loggedInUsersList" Grid.Column="1" HorizontalAlignment="Left" Height="471" Grid.Row="1" VerticalAlignment="Top" Width="137"/>
+    </Grid>
+</Window>

@@ -1,0 +1,19 @@
+﻿<Window x:Class="Projekt_DPOB.OptionsWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Projekt_DPOB"
+        mc:Ignorable="d"
+        Title="Options" Height="196.427" Width="400">
+    <Grid>
+        <ListBox Name="languagesBox" HorizontalAlignment="Left" Height="26" Margin="86,10,0,0" VerticalContentAlignment="Center" VerticalAlignment="Top" Width="296"/>
+        <Label Name="languageLabel" Content="Language : " HorizontalAlignment="Left" Margin="10,10,0,0" VerticalContentAlignment="Center" VerticalAlignment="Top"/>
+        <CheckBox Name="scrollToBottomBox" Content="Scroll to bottom on new message automatically" HorizontalAlignment="Left" Margin="10,41,0,0" VerticalContentAlignment="Center" VerticalAlignment="Top" Height="26" Width="372"/>
+        <CheckBox Name="rememberBox" Content="Remember login" HorizontalAlignment="Left" Margin="10,67,0,0" VerticalContentAlignment="Center" VerticalAlignment="Top" Height="26" Width="372"/>
+        <Button Name="saveButton" Content="Save changes" HorizontalAlignment="Left" Margin="10,98,0,0" VerticalAlignment="Top" Width="120" Height="60" Click="saveButton_Click"/>
+        <Button Name="defaultButton" Content="Default settings" HorizontalAlignment="Left" Margin="135,98,0,0" VerticalAlignment="Top" Width="122" Height="60" Click="defaultButton_Click"/>
+        <Button Name="cancelButton" Content="Cancel" HorizontalAlignment="Left" Margin="262,98,0,0" VerticalAlignment="Top" Width="120" Height="60" Click="cancelButton_Click"/>
+
+    </Grid>
+</Window>
